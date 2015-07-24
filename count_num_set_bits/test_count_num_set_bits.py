@@ -13,6 +13,9 @@ class TestCountNumBits(unittest.TestCase):
     def test_count_set_bits_implementation_2(self):
         self.assertEqual(self.obj.count_set_bits_2(), 5)
 
+    def test_count_set_bits_implementation_3(self):
+        self.assertEqual(self.obj.count_set_bits_3(), 5)
+
 
 if __name__ == "__main__":
     unittest.main()

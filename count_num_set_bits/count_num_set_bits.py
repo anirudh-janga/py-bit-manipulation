@@ -11,6 +11,12 @@ class BitOperations(object):
 
         self._num = number
 
+        #build a look up table
+        bit_table = [0]*256
+        for index in range(256):
+            bit_table[index] = (index&1) + bit_table[index>>1]
+        self.bit_table = bit_table
+
     def count_set_bits_1(self):
 
         #worst case - O(n)
@@ -33,6 +39,10 @@ class BitOperations(object):
 
         return num_set_bits
 
+    def count_set_bits_3(self):
+
+        #worst case - O(1)
+        return self.bit_table[self._num & 0xff]
 
 
 
