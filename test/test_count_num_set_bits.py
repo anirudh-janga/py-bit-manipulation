@@ -1,6 +1,6 @@
 import unittest
 
-import count_num_set_bits
+from code import count_num_set_bits
 
 class TestCountNumBits(unittest.TestCase):
 
@@ -16,6 +16,8 @@ class TestCountNumBits(unittest.TestCase):
     def test_count_set_bits_implementation_3(self):
         self.assertEqual(self.obj.count_set_bits_3(), 5)
 
+    def test_parity(self):
+        self.assertEqual(self.obj.get_parity(), 'odd')
 
 if __name__ == "__main__":
     unittest.main()

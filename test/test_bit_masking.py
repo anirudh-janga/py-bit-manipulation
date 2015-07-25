@@ -1,6 +1,6 @@
 import unittest
 
-import bit_masking
+from code import bit_masking
 
 class TestBitManipulation(unittest.TestCase):
 

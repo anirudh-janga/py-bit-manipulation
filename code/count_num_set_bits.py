@@ -44,6 +44,8 @@ class BitOperations(object):
         #worst case - O(1)
         return self.bit_table[self._num & 0xff]
 
-
+    def get_parity(self):
+        num_bits = self.count_set_bits_3()
+        return 'even' if num_bits%2==0 else 'odd'
 
 
