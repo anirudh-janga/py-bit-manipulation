@@ -1,5 +1,11 @@
+'''
+Set of all bit wise operations
+'''
 
 class BitOperations(object):
+    '''
+    Initiaze the bit operations object
+    '''
 
     def __init__(self, number):
         self._number = number
