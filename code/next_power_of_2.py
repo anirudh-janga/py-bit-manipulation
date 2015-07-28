@@ -1,3 +1,6 @@
+'''
+Implementations for counting a number n such as n > given number where n = 2^n
+'''
 
 class NextPow2(object):
 
